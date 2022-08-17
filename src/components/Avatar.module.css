@@ -1,0 +1,16 @@
+.avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 8px;
+}
+
+.avatarWithBorder {
+    /*box-sizing: initial;
+     quando eu adicionar border, outline, que essas coisas adicionais ocupem espaço a mais e nao tire do tamanho da imagem */
+    width: calc(3rem + 12px);
+    height: calc(3rem + 12px);
+    /*adicionando 12 px para nao diminuir o tamanho da imagem*/
+    border-radius: 8px;
+    border: 4px solid var(--gray-800);
+    outline: 2px solid var(--green-500);
+}
