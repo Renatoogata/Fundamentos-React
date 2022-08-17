@@ -1,0 +1,45 @@
+:root {
+    --white: #ffffff;
+    --gray-100: #e1e1e6;
+    --gray-300: #c4c4cc;
+    --gray-400: #8d8d99;
+    --gray-600: #323238;
+    --gray-700: #29292e;
+    --gray-800: #202024;
+    --gray-900: #121214;
+
+    --green-300: #00B37E;
+    --green-500: #00875f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:focus {
+    /*quando passa o mouse em cima de um form por exemplo ele faz um borda branca, mexendo no focus podemos alterar esse padrao*/
+    outline: transparent;
+    /*tira a borda branca ao passar o mouse*/
+    box-shadow: 0 0 0 2px var(--green-500);
+}
+
+body {
+    background: var(--gray-900);
+    color: var(--gray-300);
+    /* cor padrao dos textos */
+    -webkit-font-smoothing: antialiased;
+    /* aplica nos navegadores que sao baseados no webkit uma padronização para as fontes ficarem mais fininhas e detalhadas*/
+}
+
+body,
+input,
+textarea,
+button {
+    font-family: 'Roboto', sans-serif;
+    /*roboto é a fonte a ser carregada e utilizada se nao conseguir, carrega a sans-serif */
+    font-weight: 400;
+    font-size: 1rem;
+    /* rem aumenta a acessibilidade pois ela vai agir de acordo com oq o usuario definiu por padrao 1rem = 16px por padrao se o usuario nao mudar*/
+}

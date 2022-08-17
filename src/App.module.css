@@ -1,0 +1,16 @@
+.wrapper {
+    max-width: 70rem;
+    margin: 2rem auto;
+    /* 2rem em cima e em baixo e nas laterais auto para ficar centralizado*/
+    padding: 0 1rem;
+    /* se diminuir a tela pra uma menor q 70rem o conteudo nao vai ficar colado nas laterais */
+
+
+    display: grid;
+    grid-template-columns: 256px 1fr;
+    /* definindo largura fixa da primeira sidebar de 256px e a segunda vai se ajustar ao tamanho da tela */
+    gap: 2rem;
+    /* gap entre a primeira  e segunda sidebar */
+    align-items: flex-start;
+    /* as 2 sidebars sempre alinhados pro topo */
+}
